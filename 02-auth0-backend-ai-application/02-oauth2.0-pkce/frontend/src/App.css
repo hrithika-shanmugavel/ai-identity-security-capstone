@@ -1,0 +1,242 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #f8fafc;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  background: #000000;
+  color: white;
+  font-size: 14px;
+}
+
+.navbar {
+  height: 75px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+}
+
+.navbar h2 {
+  color: #a5b4fc;
+}
+
+.user-section {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.logout {
+  background: #4769d8;
+  padding: 8px 16px;
+  border-radius: 0;
+}
+
+.welcome {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome h1 {
+  font-size: 42px;
+}
+
+.welcome p {
+  color: #94a3b8;
+}
+
+.main-login {
+  margin-top: 15px;
+  padding: 12px 30px;
+}
+
+.dashboard {
+  max-width: 1050px;
+  margin: 60px auto;
+  padding: 0 25px;
+}
+
+.welcome-user {
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+.permission-box {
+  margin: 30px 0;
+}
+
+.permission {
+  display: inline-block;
+  margin: 8px 8px 0 0;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background: #1e293b;
+  color: #a5b4fc;
+  font-size: 13px;
+}
+
+.endpoint-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  padding-top: 30px;
+}
+
+.endpoint-card,
+.jwt-section {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 22px;
+}
+
+.endpoint-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: monospace;
+}
+
+.endpoint {
+  color: black;
+  font-family: monospace;
+}
+
+.permission-text {
+  display: block;
+  text-align: left;
+  color: black;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.call-endpoint-button {
+  padding: 8px 16px;
+  background: #4769d8;
+  border-radius: 0;
+}
+
+.endpoint-heading .call-endpoint-button {
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.method {
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.get {
+  background: #61AFFE;
+  color: #FFFFFF;
+}
+
+.post {
+  background: #49CC90;
+  color: #FFFFFF;
+}
+
+.endpoint-card p,
+.jwt-section p {
+  color: #94a3b8;
+}
+
+.endpoint-card pre {
+  background: #ffffff;
+  color: #000000;
+  padding: 15px;
+  border: 1px solid #9ca3af;
+  border-radius: 7px;
+  text-align: left;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+
+.jwt-section textarea {
+  display: block;
+  width: 100%;
+  margin: 18px 0;
+  padding: 12px;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #475569;
+  border-radius: 0;
+  overflow-wrap: anywhere;
+}
+
+.jwt-section a {
+  color: #a5b4fc;
+  margin-left: 15px;
+}
+
+.loading {
+  padding: 100px;
+  text-align: center;
+}
+
+.retrieve-jwt-token-text {
+  display: block;
+  margin-bottom: 12px;
+  font-family: monospace;
+  font-size: 14px;
+  color: black;
+}
+
+.access-jwt-token-button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 10px;
+  background-color: #f52b2b;
+  color: white;
+  border-radius: 0;
+}
+
+.copy-jwt-button {
+  background-color: #4769d8;
+  color: white;
+  border-radius: 0;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+.decode-jwt-link {
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .endpoint-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .user-section span {
+    display: none;
+  }
+}
