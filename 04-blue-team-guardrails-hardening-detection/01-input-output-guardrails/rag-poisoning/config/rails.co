@@ -1,0 +1,7 @@
+define flow check rag poisoning
+
+    $is_malicious = execute detect_rag_poisoning(message=$user_message)
+
+    if $is_malicious
+        bot refuse to respond
+        stop

@@ -1,0 +1,4 @@
+define flow check document input
+    user ...
+    $input = $user_message
+    execute check jailbreak
